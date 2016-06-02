@@ -1,110 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/common_bg" >
+    android:layout_height="match_parent">
+
 
     <LinearLayout
-        android:id="@+id/main_bottom"
+        android:id="@+id/ll"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/bottom_bar_normal_bg"
-        android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
-        <RelativeLayout
-            android:id="@+id/btn_container_conversation"
+        <TextView
+            android:id="@+id/tvMain"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
-
-            <Button
-                android:id="@+id/btn_conversation"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/main_bottom_item_bg"
-                android:drawableTop="@drawable/tab_chat_bg"
-                android:onClick="onTabClicked"
-                android:paddingBottom="2dip"
-                android:paddingTop="7dip"
-                android:scaleType="matrix"
-                android:text="@string/session"
-                android:textColor="@color/main_botton_text_color"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/unread_msg_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="1dp"
-                android:background="@drawable/unread_count_bg"
-                android:gravity="center"
-                android:text="7"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"
-                android:visibility="invisible" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/btn_container_address_list"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/indexhome"
+            android:gravity="center_horizontal"
+            android:text="首页" />
+        <TextView
+            android:id="@+id/tvCangyou"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/indexfriend"
+            android:gravity="center_horizontal"
+            android:text="藏友" />
 
-            <Button
-                android:id="@+id/btn_address_list"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/main_bottom_item_bg"
-                android:drawableTop="@drawable/tab_contact_list_bg"
-                android:onClick="onTabClicked"
-                android:paddingBottom="2dip"
-                android:paddingTop="7dip"
-                android:scaleType="matrix"
-                android:text="@string/address_book"
-                android:textColor="@color/main_botton_text_color"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/unread_address_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/unread_dot"
-                android:visibility="visible" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/btn_container_setting"
+        <ImageView
+            android:id="@+id/tvChuiZi"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+           android:src="@drawable/tabbar_x"
+            android:gravity="center_horizontal"
+             />
+        <TextView
+            android:id="@+id/tvCollect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/indexshops"
+            android:gravity="center_horizontal"
+            android:text="逛逛" />
 
-            <Button
-                android:id="@+id/btn_setting"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/main_bottom_item_bg"
-                android:drawableTop="@drawable/tab_setting_bg"
-                android:onClick="onTabClicked"
-                android:paddingBottom="2dip"
-                android:paddingTop="7dip"
-                android:scaleType="matrix"
-                android:text="@string/setting"
-                android:textColor="@color/main_botton_text_color"
-                android:textSize="12sp" />
-        </RelativeLayout>
+        <TextView
+
+            android:id="@+id/tvPersonalCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/indexpeople"
+            android:gravity="center_horizontal"
+            android:text="登录" />
     </LinearLayout>
-
-    <RelativeLayout
-        android:id="@+id/fragment_container"
+    <FrameLayout
+        android:id="@+id/fg"
+        android:layout_above="@id/ll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/main_bottom" />
+        />
 
 </RelativeLayout>

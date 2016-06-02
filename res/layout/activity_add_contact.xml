@@ -21,7 +21,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="#fff"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:text="添加好友"/>
         
         <Button
             android:id="@+id/search"
@@ -31,7 +32,7 @@
             android:layout_centerVertical="true"
             android:background="@drawable/common_tab_bg"
             android:onClick="searchContact"
-            android:text="@string/button_search"
+            android:text="搜索"
             android:textColor="#fff"
             android:textSize="16sp" />
     </RelativeLayout>
@@ -43,17 +44,20 @@
         android:layout_margin="10dp"
         android:paddingLeft="5dp"
         android:background="@drawable/button_normal_shape"
-        android:hint="用户名"
+        android:hint="用户名/掌信号"
         android:singleLine="true"
         android:textColorHint="#b3b3b3"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        />
 
     <LinearLayout
         android:id="@+id/ll_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/mm_listitem"
-        android:visibility="gone" >
+        android:visibility="gone"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -68,18 +72,30 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="11dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/default_avatar" />
+                android:src="@drawable/default_avatar"
+                />
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
                 android:layout_marginLeft="18dp"
                 android:layout_toRightOf="@id/avatar"
                 android:textColor="#0F0F0F"
-                android:textSize="16sp" />
-
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/avatar"
+                android:textColor="#0F0F0F"
+                android:textSize="16sp"
+                android:layout_below="@id/name"
+                android:layout_marginTop="6dp"
+                />
 
             <Button
                 android:id="@+id/indicator"

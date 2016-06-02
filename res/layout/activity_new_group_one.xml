@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_tab_bg"
+            android:onClick="back" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mm_title_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新建群聊"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_normal_shape"
+        android:hint="位置："
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/moren"
+                android:layout_marginLeft="090dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="默认"
+                android:textColor="#000"/>
+            <RadioButton
+                android:id="@+id/shoudong"
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手动输入"
+                android:textColor="#000"/>
+        </RadioGroup>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+       android:layout_height="39dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_normal_shape"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/xingqu"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兴趣："
+            android:layout_marginTop="10dp"
+            android:textColor="#333"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp">
+        
+                <CheckBox
+                    android:id="@+id/cb_shuhua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="书画"
+                    android:textColor="#000"
+
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/checkbox_bg_selector"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_taoci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="书画"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/checkbox_bg_selector"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_yuqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="书画"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/checkbox_bg_selector"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_zhumu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="书画"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/checkbox_bg_selector"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/cb_qianzheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="书画"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/checkbox_bg_selector"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_zhubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="书画"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/checkbox_bg_selector"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_zazhen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="书画"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/checkbox_bg_selector"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_jinshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="书画"
+                    android:textColor="#000"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/checkbox_bg_selector"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#fa1808"
+        />
+
+</LinearLayout>
